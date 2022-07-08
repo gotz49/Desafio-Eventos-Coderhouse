@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link de css-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--links de la tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Montaga&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Proyecto JavaScript - Santiago Díaz</title>
+</head>
+<body>
+  <main class="main">
+
+    
+  <div id="eleccion">
+    
+    <form>
+    
+      <button class="boton" id="verLogin"><a href="#divLogin" style="text-decoration:none;"> Iniciar Sesion </a></button>
+      
+      <button class="boton" id="verRegistro"> <a href="#divRegistro" style="text-decoration:none;"> Registrarse </a> </button>
+
+    </form>
+      
+  </div>
+    
+    
+      <!--! INICIAR SESION -->
+      <div id="divLogin">
+        <form id="formLogin">
+          <h1>INICIAR SESIÓN</h1>
+          <p>
+            Por favor, introduzca su correo electrónico y contraseña para iniciar
+            sesión:
+          </p>
+        
+          <!--user-->
+          <input type="email" name="Email" placeholder="Email" class="email" id="emailLogin" />
+          <div id="errorEmail"></div>
+        
+          <!--password-->
+          <input type="password" name="password" placeholder="Contraseña" class="password" id="passwordLogin"/>
+          <div id="errorPassword"></div>
+        
+          <!--boton para inciar sesion-->
+          <input type="submit" value="Iniciar sesión" class="boton" id="Ingresar" />
+        
+          <!-- Inicio -->
+          <a href="#eleccion" id="botonInicio">Inicio</a>
+        
+        </form>
+      </div>
+
+
+
+      <!--! REGISTRO -->
+      <div id="divRegistro" >
+        <form id="formRegistro">
+          <h1>REGISTRARSE</h1>
+          <p>
+            Por favor, introduzca su correo electrónico y contraseña para
+            registrarse:
+          </p>
+        
+          <!--email-->
+          <input type="email" name="Email" placeholder="Email" class="email" id="emailRegistro" />
+        
+          <!--password-->
+          <input type="password" name="password" placeholder="Contraseña" class="password" id="passwordRegistro"/>
+        
+          <!--boton para inciar sesion-->
+          <input type="submit" value="Registrarse" class="boton"  id="Registrarse" />
+          <!-- Inicio -->
+          <a href="#eleccion" id="botonInicio">Inicio</a>
+          
+        </form>
+      </div>
+      
+    </main>
+
+    <!-- link de javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
